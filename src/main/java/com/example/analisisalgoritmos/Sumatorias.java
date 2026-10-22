@@ -14,15 +14,11 @@ public class Sumatorias {
         sumatoria =( n*(n+1)) / 2;
         return sumatoria;
     }
-//    public static long sumRecursiva(long n){
-//        return sumatoriaRecursiva(n, 0);
-//    }
-//    private  static long sumatoriaRecursiva(long n, long i){
-//        if (i==n){
-//            return 0;
-//        }
-//        long sumatoria = 0+i;
-//        i++;
-//        return sumatoria + sumatoriaRecursiva(n, i);
-//    }
+
+    public  static long sumatoriaRecursiva(long n){
+        if(n<=0){
+            return 0;
+        }
+        return n+ sumatoriaRecursiva(n-1);
+    }
 }
